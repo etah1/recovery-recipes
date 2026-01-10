@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #878787;
 }
+
 .images{
     box-shadow: #333 0px 4px 8px;
     
@@ -10,10 +12,11 @@ body {
   display: flex;
   align-items: center;            
   justify-content: space-between; 
-  background-color: #878787;     
+  background-color: rgba(243, 241, 226);
   flex-wrap: wrap;              
   width:100%;
   height:30%;
+  margin-top: 60px;
 }
 
 .feature-text {
@@ -21,13 +24,16 @@ body {
   padding:40px;   
   box-shadow: #333 0px 4px 8px; 
   margin: 20px;
+  border-radius: 12px;
+  background-color: rgba(0, 76, 255, 0.15);
 }
 
 .feature-tagline {
     font-size: 20px;
   margin: 0;
   font-size: 1.5rem;
-  color: #333;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
 }
 
 .feature-description {
@@ -55,7 +61,9 @@ body {
 .mission-section {
   padding: 100px 30px;
   text-align: center;
-  background-color: #d4d4d4;
+  background-color: rgba(233, 207, 96);
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
 }
 .mission-section h2 {
   font-size: 2rem;
@@ -64,52 +72,13 @@ body {
 }
 .mission-section p {
   font-size: 1.2rem;
-  color: #555;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
 }
-.about-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 100px 30px;
-    background-color: #ffffff;
 
-}
-.about-text {
-    flex: 1 1 300px;  
-    padding:40px 40px;             /* grows, shrinks, min width 300px */
-}   
-.about-section h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 15px;
-  padding:30px;
-}
-.about-section p {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.about-image {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-  flex: 1 1 300px;   
-  padding:30px 50px; 
-}
-.about-image img {
-    
-   width:100%;         /* image fills container */
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-
-}
 .footer-section {
     text-align: center;
     padding: 20px;

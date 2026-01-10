@@ -5,8 +5,7 @@ const Home = () =>{
         <div className="home-container">
             <div className="feature-box">
       <div className="feature-text">
-        <h2 className="feature-tagline">Welcome to Recovery Recipes</h2>
-        <p className="feature-description">tagline</p>
+        <h2 className="feature-tagline">Recovery Recipes</h2>
       </div>
       <div className="feature-image">
      <img src={foodTable} alt="Delicious food on a table" className="images"/>
