@@ -28,12 +28,13 @@
   color: black;
   transition: background 0.2 s, color 0.2s;
   border-bottom: transparent 2px solid;
+  font-family: 'Baloo 2', cursive;
 }
 
 .navbar-container .links:hover {
   cursor: pointer;
-  color: #333;
-  border-bottom: #333 2px solid;
+  color: rgba(206, 93, 55);
+  border-bottom: rgba(206, 93, 55) 2px solid;
 }
 
 .logo {
