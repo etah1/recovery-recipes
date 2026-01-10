@@ -31,3 +31,10 @@
   color: #333;
   border-bottom: #333 2px solid;
 }
+
+.logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
