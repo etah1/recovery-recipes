@@ -25,7 +25,7 @@
   align-items: center;
   padding: 10px 20px;
   text-decoration: none;
-  color: #959595;
+  color: black;
   transition: background 0.2 s, color 0.2s;
   border-bottom: transparent 2px solid;
 }
@@ -43,3 +43,35 @@
   cursor: pointer;
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+  }
+
+  .navbar-container .navbar {
+    margin-left: auto;
+    gap: 14px;
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    max-width: calc(100% - 60px);
+  }
+
+  .navbar-container .links {
+    padding: 6px 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
