@@ -1,0 +1,89 @@
+.about-page {
+  padding: 80px 60px;
+}
+
+.about-layout {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  width: 520px;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 250px;
+
+}
+
+.about-text {
+  max-width: 520px;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  background-color: rgba(233, 207, 96);
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.about-instagram {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+}
+
+.about-instagram:hover {
+  border-bottom: 2px solid #c4623b;
+  transform: translateY(-1px);
+}
+
+.instagram-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 90px 16px 40px;
+  }
+
+  .about-layout {
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+
+  .about-logo {
+    width: min(86vw, 340px);
+    height: auto;
+  }
+  .about-card {
+    width: min(92vw, 420px);
+    max-width: 420px;
+    padding: 22px 18px;
+  }
+  .about-layout,
+  .about-left,
+  .about-right {
+    background: transparent !important;
+  }
+}
