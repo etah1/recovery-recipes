@@ -1,6 +1,16 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: rgba(243, 241, 226);
+}
 
 .recipes-page {
   padding: 60px 40px;
+  background-color: rgba(243, 241, 226);
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
 }
 
 .recipes-layout {
@@ -31,7 +41,7 @@
 
 .recipes-subtitle {
   margin: 0 0 20px 0;
-  color: #555;
+  color: rgba(206, 93, 55);
 }
 
 .recipes-box {
@@ -44,6 +54,8 @@
   height: 420px;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: rgba(233, 207, 96);
+  
 }
 
 .recipes-box h2,
@@ -56,11 +68,34 @@
 }
 
 .recipes-searchRow {
-  position: absolute;
-  top: 140px;
-  right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-  width: 260px;
+  margin-left: 0;
+  margin-bottom: 30px;
+
+  padding: 0;
+  width: auto;
+  border-radius: 999px;
+
+  background-color: rgba(243, 241, 226);
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+}
+
+.recipes-clear {
   padding: 8px 12px;
   font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
 }
+
+.recipes-clear:hover {
+  background: #f0f0f0;
+}
+

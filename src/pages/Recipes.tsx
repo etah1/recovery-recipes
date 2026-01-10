@@ -105,6 +105,7 @@ const Recipes = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
+        
         {query && (
           <button className="recipes-clear" onClick={() => setQuery("")}>
             Clear
