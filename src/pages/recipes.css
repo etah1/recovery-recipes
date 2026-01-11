@@ -1,0 +1,131 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: rgba(243, 241, 226);
+}
+
+.recipes-page {
+  padding: 60px 40px;
+  background-color: rgba(243, 241, 226);
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+}
+
+.recipes-layout {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 80px;
+  align-items: flex-start;
+}
+
+.recipes-image {
+  flex: 0 0 520px;
+  height: 420px;
+  width: 520px;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.recipes-instructions {
+  flex: 1 1 520px;
+  min-width: 320px;
+}
+
+.recipes-title {
+  margin: 0 0 10px 0;
+}
+
+.recipes-subtitle {
+  margin: 0 0 20px 0;
+  color: rgba(206, 93, 55);
+}
+
+.recipes-box {
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  background: #f2f2f2;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+  height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: rgba(233, 207, 96);
+  
+}
+
+.recipes-box h2,
+.recipes-box h3 {
+  margin-top: 0;
+}
+
+.recipes-box ol {
+  padding-left: 20px;
+}
+
+.recipes-searchRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-left: 0;
+  margin-bottom: 30px;
+
+  padding: 0;
+  width: auto;
+  border-radius: 999px;
+
+  background-color: rgba(243, 241, 226);
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+}
+
+.recipes-clear {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  color: rgba(206, 93, 55);
+  font-family: 'Baloo 2', cursive;
+}
+
+.recipes-clear:hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .recipes-page {
+    padding: 90px 16px 40px;
+  }
+
+  .recipes-layout {
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 40px;
+  }
+
+  .recipes-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex: none;
+  }
+
+  .recipes-instructions {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .recipes-box {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}
+

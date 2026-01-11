@@ -4,6 +4,7 @@ import About from "../pages/About";
 import Recipes from "../pages/Recipes";
 import Donation from "../pages/Donation";
 import App from "../App";
+import Newsletter from "../pages/Newsletter";
 
 const Router = createBrowserRouter([
     { path: "/",
@@ -26,6 +27,10 @@ const Router = createBrowserRouter([
             path: "/donation",
             element: <Donation />,
         },
+        {
+            path: "/newsletter",
+            element: <Newsletter/>
+        }
     ],
     },
 ]);
