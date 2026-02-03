@@ -1,6 +1,9 @@
 import { useMemo, useState } from "react";
-import steak from "../assets/steak.jpeg";
-import eggs from "../assets/eggs.jpeg";
+import fruitBowl from "../assets/fruitBowl.jpg";
+import savoryChicken from "../assets/savoryChicken.jpg";
+import beanQuinoa from "../assets/beanQuinoa.jpg";
+import curryChicken from "../assets/curryChicken.jpg";
+import can7 from "../assets/can7.jpg";
 import "./recipes.css";
 
 type Recipe = {
@@ -8,74 +11,117 @@ type Recipe = {
   title: string;
   image: string;
   instructionsTitle: string;
-  steps: string[];
-  notes: string[];
+  Instructions: string[];
+  Ingredients: string[];
+  Notes: string;
 };
 
 const RECIPES: Recipe[] = [
   {
-    id: "steak",
-    title: "Steak",
-    image: steak,
-    instructionsTitle: "Steak Instructions",
-    steps: [
-      "Preheat oven to 375°F (190°C).",
-      "Season steak with salt, pepper, and garlic.",
-      "Sear steak on high heat for 2–3 minutes per side.",
-      "Transfer to oven and bake 8–12 minutes.",
-      "Let rest for 5 minutes.",
-      "Serve and enjoy!",
-      "Poop",
-      "Poop",
-      "Poop",
-      "Poop",
-      "Poop",
-      "Poop",
-      "Poop",
+    id: "Creamy Fruit Oat Bowl",
+    title: "Creamy Fruit Oat Bowl",
+    image: fruitBowl,
+    instructionsTitle: "Creamy Fruit Oat Bowl Instructions",
+    Notes: "Serves: 2 | Uses: Oatmeal, Canned fruit, Evaporated milk | Nutrition: Calcium, Fiber, Natural Sweetness",
+    Instructions: [
+      "Cook oats with water",
+      "Stir in fruit and evaporated milk",
+      "Serve warm!"
     ],
-    notes: [
-      "Use a thermometer for doneness.",
-      "Letting it rest keeps it juicy.",
-      "Butter-baste for extra flavor.",
-      "Slice against the grain.",
+    Ingredients: [
+      "1 cup Oats",
+      "2 cups Water",
+      "1/2 cup Canned Fruit",
+      "1/4 cup Evaporated Milk",
     ],
   },
+
   {
-    id: "eggs",
-    title: "Eggs",
-    image: eggs,
-    instructionsTitle: "Eggs Instructions",
-    steps: [
-      "Crack eggs into a bowl and whisk.",
-      "Heat a nonstick pan on medium-low.",
-      "Add a small amount of butter or oil.",
-      "Pour eggs in and stir gently.",
-      "Cook until just set.",
-      "Season and serve.",
+    id: "Savory Oatmeal with Chicken & Vegetables",
+    title: "Savory Oatmeal with Chicken & Vegetables",
+    image: savoryChicken,
+    instructionsTitle: "Savory Oatmeal with Chicken & Vegetables Instructions",
+    Notes: "Serves: 2 | Uses: Oatmeal, Canned vegetables, Canned chicken, Water",
+    Instructions: [
+      "Bring water to a boil",
+      "Stir in oats",
+      "Cook 3-5 minutes, stirring",
+      "Add chicken and vegetables",
+      "Heat through and serve!"
     ],
-    notes: [
-      "Low heat = creamy eggs.",
-      "Don’t overcook, eggs keep cooking off heat.",
-      "Add veggies or cheese if you want.",
+    Ingredients: [
+      "1 cup rolled oats",
+      "2 cups Water",
+      "1/2 can Chicken",
+      "1/2 can vegetables",
     ],
   },
+
   {
-    id: "veggies",
-    title: "Sheet-Pan Veggies",
-    image: steak,
-    instructionsTitle: "Sheet-Pan Veggies Instructions",
-    steps: [
-      "Preheat oven to 425°F (220°C).",
-      "Chop vegetables evenly.",
-      "Toss with olive oil and seasoning.",
-      "Spread on a baking sheet.",
-      "Roast 25–30 minutes, stirring once.",
-      "Serve warm.",
+    id: "Quinoa, Bean & Vegetable Stew",
+    title: "Quinoa, Bean & Vegetable Stew",
+    image: beanQuinoa,
+    instructionsTitle: "Quinoa, Bean & Vegetable Stew Instructions",
+    Notes: "Serves: 4 | Uses: Quinoa, Canned beans, Canned vegetables, vegetable juice, water",
+    Instructions: [
+      "Bring vegetable juice and water to a boil",
+      "Add quinoa, reduce heat, cover, and simmer for 15 minutes",
+      "Stir in beans and vegetables",
+      "Simmer uncovered for 5 more minutes until thick",
     ],
-    notes: [
-      "Carrots + broccoli + potatoes work great.",
-      "Add lemon juice after roasting.",
-      "Store leftovers in a container for meal prep.",
+    Ingredients: [
+      "1 cup Quinoa",
+      "1 can Beans (black, kidney, or pinto), drained",
+      "1 can Mixed Vegetables, drained",
+      "2 cups vegetable juice",
+      "1 cup Water"
+    ],
+  },
+
+  {
+    id: "Canned Chicken Curry Rice",
+    title: "Canned Chicken Curry Rice",
+    image: curryChicken,
+    instructionsTitle: "Canned Chicken Curry Rice Instructions",
+    Notes: "Serves: 2 | Uses: Rice, Canned chicken, Canned vegetables, Vegetable juice, Water, Curry powder or Paprika",
+    Instructions: [
+      "Cook rice in 2 cups water",
+      "Add chicken, vegetables, and vegetable juice",
+      "Sprinkle in curry powder or paprika",
+      "Simmer 5 minutes on low until heated through and lightly saucy",
+    ],
+    Ingredients: [
+      "1 cup Rice",
+      "1 can of Canned chicken",
+      "1/2 can Mixed-Vegetables, drained",
+      "1/4 cup Vegetable juice",
+      "1 tsp Curry powder or paprika (if available)",
+      "2 cups of water"
+    ],
+  },
+
+  {
+    id: "7-Can Soup",
+    title: "7-Can Soup",
+    image: can7,
+    instructionsTitle: "7-Can Soup Instructions",
+    Notes: "Serves: 6 | Nutrition: High protein, lower carbs",
+    Instructions: [
+      "Empty the corn, chili, kidney beans, pinto beans, black beans, tomatoes and tomatoes with green chiles, liquid included, into a large pot over high heat",
+      "Bring to a boil, reduce the heat and simmer for 10-15 minutes to bring all the flavors together",
+      "Add salt and pepper to taste",
+      "Dice the cheese and stir it into the soup until melted. Serve immediately!",
+    ],
+    Ingredients: [
+      "One 15.25-oz can Corn with red and green peppers, such as Del Monte Fiesta Corn",
+      "One 15-oz can Meat-only chili",
+      "One 15-oz can Kidney beans",
+      "One 15-oz can Pinto beans",
+      "One 15-oz can Black beans",
+      "One 15-o can Diced tomatoes",
+      "One 10-oz can Diced tomatoes with green chiles, such as Ro*Tel",
+      "Salt and Freshly ground black pepper",
+      "8-oz Processed cheese, such as Velveeta"
     ],
   },
 ];
@@ -125,18 +171,23 @@ const Recipes = () => {
               <div className="recipes-box">
                 <h2>{recipe.instructionsTitle}</h2>
 
-                <ol>
-                  {recipe.steps.map((step, idx) => (
-                    <li key={idx}>{step}</li>
-                  ))}
-                </ol>
+                <p className="recipes-notes">
+                  {recipe.Notes}
+                </p>
 
-                <h3>Notes</h3>
+                <h3>Ingredients</h3>
                 <ul>
-                  {recipe.notes.map((note, idx) => (
-                    <li key={idx}>{note}</li>
+                  {recipe.Ingredients.map((Ingredients, idx) => (
+                    <li key={idx}>{Ingredients}</li>
                   ))}
                 </ul>
+
+                <h3>Instructions</h3>
+                <ol>
+                  {recipe.Instructions.map((Instructions, idx) => (
+                    <li key={idx}>{Instructions}</li>
+                  ))}
+                </ol>
               </div>
             </div>
           </div>
