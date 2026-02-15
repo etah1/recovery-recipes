@@ -1,5 +1,5 @@
 .donation-container {
-  color: rgb(83, 120, 165);
+  color: rgba(206, 93, 55);
   font-family: 'Baloo 2', cursive;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
@@ -12,24 +12,12 @@
      font-size: 36px;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgb(83, 120, 165);
+  border-bottom: 2px solid rgba(206, 93, 55);
 }
 
 .donation-container p {
     font-size: 18px;
   line-height: 1.7;
-}
-.donation-image-container img {
-   width: 100%;                  /* image fills container */
-  height: auto;
-  max-height: 400px;
-  object-fit: cover;
-}
-.donation-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
 }
 .logo-image-container {
     display: flex;
@@ -66,7 +54,7 @@
   transition: all 0.2s ease;
   color: rgba(206, 93, 55);
   font-family: 'Baloo 2', cursive;
-  background-color: rgba(233, 207, 96);
+  background-color:#FFEE8C;
   padding: 12px 24px;
     border-radius: 8px;
     border-color: rgba(206, 93, 55);
