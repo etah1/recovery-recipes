@@ -13,13 +13,11 @@ const Home = () =>{
     </div>
        <div className="mission-section">
             <h1>Our Mission</h1>
-            <p>We hope to combat food insecurity 
-                by creating nonperishable, balanced, and nutritious meal packages to 
-                distribute to the hospitals that we partner up with. We also hope to 
-                personalize these meals to fit the patients’ needs. For instance if 
-                they’re on a low-sodium diet, they have diabetes, or have hypertension. 
-                We will receive this data from the hospitals themselves, of course obliging 
-                by HIPAA protocols.
+            <p>Food-insecure patients endure delayed healing, higher readmission rates, 
+                and poorer health outcomes overall. We aim to alleviate food insecurity in discharged patients 
+                and education community members about the impacts of food insecurity on health. 
+                This website will serve as an educational resource to provide recipes that can be 
+                made from easily accessible foods that can be found at food banks and donation drives.
 </p>
         </div>
         </div> 
