@@ -7,7 +7,7 @@ const Footer = () => {
                     <p><strong>Recovery Recipes</strong></p>
                     <p>College Park, MD</p>
                     <p>Email: recoveryrecipes@gmail.com</p>
-                    <p>Phone: 443-546-884</p>
+                    <p>Phone: 571-286-8841</p>
                 </div>
             <hr className="contact-divider" />
 
