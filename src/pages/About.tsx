@@ -15,12 +15,12 @@ const About = () => {
         <div className="about-text">
           <h2>About Us</h2>
           <p>
-            Recovery Recipes, an on-campus organization whose mission is to
-            combat food insecurity in patients who have recently been
-            discharged from the hospital. The few days after discharge, people
-            may not have access to balanced meals. Additionally, food-insecure
-            patients encounter delayed healing, higher readmission rates, and
-            poorer health outcomes.
+            We are an on-campus organization at the University of Maryland College Park whose mission 
+            is to combat food insecurity in patients who have been recently discharged from the hospital. 
+            We hope to provide balanced and nutritious meals to streamline their healing process. 
+            Our recipes are created with the help from chefs from UMD’s Campus Pantry. 
+            Our newsletter gives monthly updates on club meetings and various local resources for those facing food insecurity.
+
           </p>
 
           <a
