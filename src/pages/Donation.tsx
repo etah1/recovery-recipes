@@ -1,13 +1,11 @@
-import "./donation.css";
-import logo from "../assets/logo.png";
+import './donation.css';
+import logo from '../assets/logo.png';
 
 const Donation = () => {
-
-  const venmoLink = "https://venmo.com/u/buijessica28";
+  const venmoLink = 'https://venmo.com/u/buijessica28';
 
   return (
     <div className="donation-page">
-
       <div className="donation-container">
         <h2>Donations</h2>
 
@@ -27,12 +25,10 @@ const Donation = () => {
             rel="noopener noreferrer"
             className="donation-button"
           >
-            Venmo
+            💸 Venmo
           </a>
         </div>
-
       </div>
-
     </div>
   );
 };
