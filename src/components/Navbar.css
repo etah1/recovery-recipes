@@ -1,78 +1,117 @@
-
 .navbar-container {
   display: flex;
-  justify-content: flex-start;   /* logo on left */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: rgba(0, 76, 255, 0.15);
-   backdrop-filter: blur(8px);
-  width: 100%;                   /* take full width */
-  box-sizing: border-box;        /* include padding in width */   
+  padding: 0 32px;
+  height: 64px;
+  background: var(--blue);
+  backdrop-filter: blur(16px) saturate(1.6);
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  border-bottom: 1.5px solid rgba(0, 76, 255, 0.10);
+  box-shadow: 0 2px 20px rgba(0, 76, 255, 0.07);
+  width: 100%;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
-.navbar-container .navbar {
+.navbar-logo {
   display: flex;
-  margin-left: auto;             /* push links to the right */
-  gap: 30px;                     /* space between links */
-        
-}
-
-.navbar-container .links {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  gap: 10px;
+  cursor: pointer;
   text-decoration: none;
-  color: black;
-  transition: background 0.2 s, color 0.2s;
-  border-bottom: transparent 2px solid;
-  font-family: 'Baloo 2', cursive;
 }
 
-.navbar-container .links:hover {
-  cursor: pointer;
-  color: rgba(206, 93, 55);
-  border-bottom: rgba(206, 93, 55) 2px solid;
+.navbar-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .logo {
   height: 40px;
-  width: auto;
-  object-fit: contain;
-  cursor: pointer;
+  width: 40px;
   border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: var(--shadow2);
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: rotate(-6deg) scale(1.07);
+}
+
+.navbar-container .navbar {
+  display: flex;
+  gap: 6px;
+}
+
+.navbar-container .links {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1.5px solid transparent;
+  transition: color 0.22s;
+  position: relative;
+}
+
+.navbar-container .links::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background: var(--orange);
+  transition: left 0.22s, right 0.22s;
+  border-radius: 2px;
+}
+
+.navbar-container .links:hover {
+  color: var(--orange);
+}
+
+.navbar-container .links:hover::after {
+  left: 18px;
+  right: 18px;
 }
 
 @media (max-width: 768px) {
   .navbar-container {
-    padding: 10px 12px;
-    gap: 10px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .navbar-logo-text {
+    display: none;
   }
 
   .logo {
-    height: 38px;
-    width: 38px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex: 0 0 auto;
+    height: 36px;
+    width: 36px;
   }
 
   .navbar-container .navbar {
-    margin-left: auto;
-    gap: 14px;
-
+    gap: 0;
     flex-wrap: wrap;
     justify-content: flex-end;
-
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 56px);
   }
 
   .navbar-container .links {
-    padding: 6px 10px;
-    font-size: 14px;
+    padding: 6px 8px;
+    font-size: 0.72rem;
     white-space: nowrap;
   }
 }
-

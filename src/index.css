@@ -1,1 +1,38 @@
+:root {
+  --orange:  #CE5D37;
+  --orange2: rgba(206, 93, 55, 0.12);
+  --yellow:  #FFEE8C;
+  --cream:   #F3F1E2;
+  --blue:    rgba(0, 76, 255, 0.13);
+  --blue2:   rgba(0, 76, 255, 0.22);
+  --grey:    #878787;
+  --dark:    #2a1a10;
+  --shadow:  0 8px 32px rgba(44, 20, 8, 0.13);
+  --shadow2: 0 2px 12px rgba(44, 20, 8, 0.09);
+  --radius:  18px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Baloo 2', cursive;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 

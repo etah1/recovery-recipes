@@ -1,57 +1,99 @@
 .about-page {
-  padding: 80px 60px;
+  padding: 80px 48px 60px;
+  padding-top: calc(64px + 40px);
 }
 
 .about-layout {
-  display: flex;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.about-image {
-  width: 520px;
-  height: 520px;
-  object-fit: cover;
-  border-radius: 250px;
-
+/* Image with decorative ring */
+.about-img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
+.about-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 20px -20px -20px 20px;
+  border-radius: 50%;
+  border: 3px solid var(--yellow);
+  z-index: 0;
+}
+
+.about-image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+/* Card */
 .about-text {
-  max-width: 520px;
-  color: rgba(206, 93, 55);
-  font-family: 'Baloo 2', cursive;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
-  background-color: #FFEE8C;
-  border-radius: 12px;
-  padding: 36px 40px;
+  background: var(--yellow);
+  border-radius: var(--radius);
+  padding: 44px 48px;
+  box-shadow: var(--shadow2);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-text::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--orange2);
 }
 
 .about-text h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 18px;
+  font-weight: 900;
+  position: relative;
 }
 
 .about-text p {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  position: relative;
 }
 
 .about-instagram {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 24px;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--orange);
   text-decoration: none;
-  font-weight: 500;
   border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
-  color: rgba(206, 93, 55);
-  font-family: 'Baloo 2', cursive;
+  transition: border-color 0.2s, transform 0.2s;
+  position: relative;
+  font-family: var(--font-body);
 }
 
 .about-instagram:hover {
-  border-bottom: 2px solid #c4623b;
+  border-bottom-color: var(--orange);
   transform: translateY(-1px);
 }
 
@@ -62,31 +104,27 @@
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .about-page {
-    padding: 90px 16px 40px;
+    padding: 90px 20px 40px;
   }
 
   .about-layout {
-    flex-direction: column;
-    gap: 28px;
+    grid-template-columns: 1fr;
+    gap: 32px;
     align-items: center;
   }
 
+  .about-img-wrap::after {
+    display: none;
+  }
+
   .about-image {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
+    max-width: 240px;
+    margin: 0 auto;
   }
-  
-  .about-card {
-    width: min(92vw, 420px);
-    max-width: 420px;
-    padding: 40px 48px;
-  }
-  .about-layout,
-  .about-left,
-  .about-right {
-    background: transparent !important;
+
+  .about-text {
+    padding: 32px 28px;
   }
 }
