@@ -29,7 +29,7 @@
   font-size: 1.2rem;
   color: var(--orange);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .logo {
@@ -115,3 +115,4 @@
     white-space: nowrap;
   }
 }
+

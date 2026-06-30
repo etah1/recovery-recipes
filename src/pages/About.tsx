@@ -1,21 +1,17 @@
+import instagramIcon from '../assets/Instagram_icon.png';
 import logo from '../assets/logo.png';
 import './about.css';
-import instagramIcon from '../assets/Instagram_icon.png';
 
 const About = () => {
   return (
-    <div className="about-page">
+    <main className="about-page">
       <div className="about-layout">
         <div className="about-img-wrap">
-          <img
-            src={logo}
-            alt="About Recovery Recipes"
-            className="about-image"
-          />
+          <img src={logo} alt="Recovery Recipes logo" className="about-image" />
         </div>
 
-        <div className="about-text">
-          <h2>About Us</h2>
+        <section className="about-text">
+          <h1>About Us</h1>
           <p>
             We are an on-campus organization at the University of Maryland College Park
             whose mission is to combat food insecurity in patients who have been recently
@@ -31,16 +27,12 @@ const About = () => {
             rel="noopener noreferrer"
             className="about-instagram"
           >
-            <img
-              src={instagramIcon}
-              alt="Instagram"
-              className="instagram-icon"
-            />
-            Follow us on Instagram!
+            <img src={instagramIcon} alt="Instagram" className="instagram-icon" />
+            Follow us on Instagram
           </a>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 };
 

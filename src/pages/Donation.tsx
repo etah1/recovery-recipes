@@ -1,17 +1,17 @@
-import './donation.css';
 import logo from '../assets/logo.png';
+import './donation.css';
 
 const Donation = () => {
   const venmoLink = 'https://venmo.com/u/buijessica28';
 
   return (
-    <div className="donation-page">
-      <div className="donation-container">
-        <h2>Donations</h2>
+    <main className="donation-page">
+      <section className="donation-container">
+        <h1>Donations</h1>
 
         <p>
           Your support helps Recovery Recipes continue providing healthy meals,
-          community outreach, and education. Thank you for considering a donation!
+          community outreach, and education. Thank you for considering a donation.
         </p>
 
         <div className="logo-image-container">
@@ -25,11 +25,11 @@ const Donation = () => {
             rel="noopener noreferrer"
             className="donation-button"
           >
-            💸 Venmo
+            Venmo
           </a>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

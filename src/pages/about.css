@@ -61,7 +61,7 @@
   background: var(--orange2);
 }
 
-.about-text h2 {
+.about-text h1 {
   font-family: var(--font-display);
   font-size: 2rem;
   color: var(--dark);
@@ -128,3 +128,4 @@
     padding: 32px 28px;
   }
 }
+
